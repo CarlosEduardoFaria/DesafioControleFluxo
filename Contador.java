@@ -32,8 +32,12 @@ public class Contador {
 
         final int contagem = parametroDois - parametroUm;
         //realizar o for para imprimir os números com base na variável contagem
-        for (int i = 0; i < contagem; i++) {
-            System.out.print("Imprimindo o número: " + i + "\n");
+        if (contagem > 0) {
+            for (int i = 0; i < contagem; i++) {
+                System.out.print("Imprimindo o número: " + i + "\n");
+            }
+        } else {
+            System.out.print("Sem interações, a diferença dos valores é zero.");
         }
     }
     private static void mensagem(String var) {
